@@ -45,6 +45,13 @@ gem 'jquery-rails'
 #Paperclip for avatar
 gem "paperclip", "~> 5.0.0"
 
+gem 'client_side_validations'
+#Editor
+gem 'tinymce-rails'
+
+#Image gallery
+gem 'carrierwave', '~> 1.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

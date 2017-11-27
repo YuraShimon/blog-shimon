@@ -9,7 +9,8 @@ class PhotosController < ApplicationController
   end
   def create
   	params[:photo][:category_id] = params[:category_id]
-    @photo = current_user.photos.build(photos_params)	
+  	params[:photo][:user_id] = current_user.id
+    @photo = Photo.create(photo_params)	
     redirect_to photos_path
   end
   

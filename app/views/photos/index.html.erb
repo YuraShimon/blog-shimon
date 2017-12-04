@@ -10,7 +10,7 @@
   <p>Author: <%= photo.user.nickname %> | 
   Category: <%= photo.category.name %> |
   Photo: <%= photo.name %> |
- 
+  <%= link_to "Like", vote_photo_path(photo.id) %> (<%= @like[photo.id]%>)
 
   <br/>
   <%end%>

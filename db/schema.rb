@@ -98,6 +98,7 @@ ActiveRecord::Schema.define(version: 20171201120236) do
 
   create_table "votes", force: :cascade do |t|
     t.integer "user_id"
+    t.integer "photo_id"
     t.integer "like"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
